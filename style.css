@@ -78,7 +78,12 @@ section{
 .heading span{
     color:var(--yellow);
 }
-
+#Sprak{
+    text-align: start;
+    
+    color:rgb(10, 7, 7);
+    width: 20rem;
+}
 header{
     position: fixed;
     top:0; left:0;
