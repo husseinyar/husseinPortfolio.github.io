@@ -296,23 +296,51 @@ header .navbar ul li a:hover{
     flex-wrap: wrap;
     padding:2rem 0;
 }
+ .box-container .box-row{
+    display: grid;
+    
+    grid-template-columns: auto 400px  ;
 
-.portfolio .box-container .box{
-    height: 20rem;
-    width:26rem;
-    border-radius: 1rem;
-    margin:2rem;
-    overflow: hidden;
-    cursor: pointer;
+   row-gap: 20px;
+
+    
+
+    
+ 
+}
+ .box-container .box-row .box-img{
+  margin-bottom: 20px;
+ 
+  border-radius: 20px;
+}
+.item1{
+    position: relative;
+   
+    text-align: justify;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px inset;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+}
+.item1 p{
+    margin-top: 20px;
+}
+.item1 h2{
+    margin-top: 20px;
 }
 
-.portfolio .box-container .box img{
+ .box-container .box-row .box-img img{
     height:100%;
     width:100%;
+    box-shadow: 5px 10px inset;
     object-fit: cover;
 }
 
-.portfolio .box-container .box:hover img{
+.portfolio .box-container  .box-img:hover img{
     transform: scale(1.2);
 }
 
@@ -386,12 +414,33 @@ header .navbar ul li a:hover{
     display: none;
 }
 
+.btn-links{
+    
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.bt-link{
+background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  border-radius: 50px;
+  cursor: pointer;
+  
+}
 
 
 
-
-
-
+.bt-link:hover{
+    background:var(--yellow);
+}
 
 
 
@@ -443,7 +492,9 @@ header .navbar ul li a:hover{
     html{
         font-size: 50%;
     }
- 
+    .portfolio .box-container .box-row {
+        display: block;
+     }
  }
 
 @media (max-width:400px){
@@ -464,12 +515,16 @@ header .navbar ul li a:hover{
         width:100%;
     }
 
-    .portfolio .box-container .box{
-        width:100%;
+    .portfolio .box-container .box-row {
+       display: block;
     }
 
     .contact .row form{
         margin:3rem 0;
+    }
+   
+    .portfolio .box-container .box{
+        width:100%;
     }
 
  }
