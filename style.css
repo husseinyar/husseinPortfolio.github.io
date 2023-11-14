@@ -101,10 +101,16 @@ header{
 header .user img{
     height:17rem;
     width:17rem;
-    border-radius: 50%;
-    object-fit:fill;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     margin-bottom: 1rem;
-    border:.7rem solid var(--yellow);
+    border:.3rem solid var(--yellow);
+    background-color: #4CAF50;
+}
+header .user span img{
+    height:17rem;
+    width:100%;
+
 }
 
 header .user .name{
@@ -158,6 +164,9 @@ header .navbar ul li a:hover{
     justify-content: center;
     flex-flow: column;
     padding:0 15rem;
+  
+    width: 60%;
+
 }
 
 .home h3{
@@ -445,7 +454,18 @@ background-color: #4CAF50; /* Green */
 
 
 
-
+.home .language{
+    background: rgb(241, 238, 238);
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    padding: auto;
+    font-size: medium;
+}
+.home .language:hover{
+    background: var(--yellow)
+       
+}
 
 
 
@@ -463,6 +483,7 @@ background-color: #4CAF50; /* Green */
 
     .home{
         padding:1rem 4rem;
+  
     }
 
 }
@@ -484,7 +505,14 @@ background-color: #4CAF50; /* Green */
    body{
        padding:0;
    }
-
+   .home .language{
+    background: rgb(238, 234, 227);
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    padding: auto;
+    font-size: medium;
+}
 }
 
 @media (max-width:768px){
@@ -495,9 +523,21 @@ background-color: #4CAF50; /* Green */
     .portfolio .box-container .box-row {
         display: block;
      }
+     .home{
+        padding:1rem 4rem;
+       width: 60%;
+    }
+    .home .language{
+        background: rgb(238, 234, 227);
+        width: 50%;
+        height: 40px;
+        border-radius: 20px;
+        padding: auto;
+        font-size: medium;
+    }
  }
 
-@media (max-width:400px){
+@media (max-width:600px){
 
     header{
         width: 100vw;
@@ -526,5 +566,18 @@ background-color: #4CAF50; /* Green */
     .portfolio .box-container .box{
         width:100%;
     }
-
+    .home{
+        padding:1rem 4rem;
+       width: 100%;
+     
+    }
+    .home .language{
+        background: rgb(238, 234, 227);
+        width: 50%;
+        height: 40px;
+        border-radius: 20px;
+        padding: auto;
+        font-size: medium;
+    }
+  
  }

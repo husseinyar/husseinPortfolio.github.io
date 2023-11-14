@@ -19,7 +19,8 @@
 <header>
 
     <div class="user">
-        <img src="imges/porfil (2).jpg" alt="">
+        
+         <span> <img src="imges/porfil.jpg" alt=""></span>
         <h3 class="name">Hussein Abdi</h3>
         <p class="post">Fullstack developer</p>
     </div>
@@ -29,7 +30,7 @@
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#education">education</a></li>
-            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#portfolio">My Projects</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
@@ -43,7 +44,7 @@
 <!-- home section starts About me -->
 
 <section class="home" id="home">
-    <select id="Sprak" onchange="spark()">
+    <select class="language" id="language" onchange="language()">
         <option  value="English">English</option>
         <option  value="Swededish">Swededish</option>
         
@@ -52,9 +53,10 @@
        
         
 
-    <h3>Hej Där!</h3>
-    
-    <p>Hej, jag är Hussein, en erfaren fullstack-utvecklare.
+    <h3>Hej</h3>
+     
+   
+    <p>Jag är Hussein, en erfaren fullstack-utvecklare.
          Med 4 års erfarenhet som maskinoperatör och konduktör 
          på Postnord har jag starka färdigheter inom grupparbete. 
          På fritiden älskar jag att spela fotboll, en passion som ger mig avslappning 
@@ -62,7 +64,7 @@
          hobby till att göra det till mitt yrke, jag är glad att följa min 
          passion och stödja andra på vägen
     </p>
-    <a href="#portfolio"><button class="btn"> My work <i class="fas fa-user"></i></button></a>
+    <a href="#portfolio"><button class="btn"> My work <i class="fas fa-briefcase"></i></button></a>
     <a href="#contact"><button class="btn"> contact <i class="fas fa-user"></i></button></a>
 </div>
 <div id="English" hidden>
@@ -75,7 +77,7 @@
 
         I initially started coding as a hobby, but quickly realized it was a true passion. This realization led me to make a career change. It was a significant decision, but I'm happy to pursue what I love and help others along the way
     </p>
-    <a href="#portfolio"><button class="btn"> My work <i class="fas fa-user"></i></button></a>
+    <a href="#portfolio"><button class="btn"> My work <i class="fas fa-briefcase"></i></button></a>
     <a href="#contact"><button class="btn"> contact <i class="fas fa-user"></i></button></a>
 </div>
 </section>
@@ -96,6 +98,7 @@
       
         <h3> <span> post : </span> fullstack </h3>
         <h3> <span> Språk : </span> English and Swedish </h3>
+     
         <a href="#"><button class="btn" onclick="location.href='document/Cv_Hussein Abdi.pdf'"> download CV <i class="fas fa-download"></i> </button></a>
     </div>
 
@@ -168,7 +171,7 @@
 
 <section class="portfolio" id="portfolio">
 
-<h1 class="heading"> My <span>Work</span> </h1>
+<h1 class="heading"> My <span>portfolio</span> </h1>
 
 <div class="box-container">
 
@@ -235,8 +238,8 @@
         <div class="item1">
 
             <h2>Movieland_app</h2>
-            <p>This app is great for testing reaction speed. Start by clicking 'play,' then click on the green square as quickly as possible. Afterward, you'll receive feedback
-                 on your reaction time, such as 'Reaction Time: 2:00.' Give it a try and see how fast you can react</p>
+            <p>This app is good for checking how fast the reaction is by first clicking play after a green square click as fast as you can. then you get other text that describes what reaction you have: reaction.
+                see if you can hit (reaction time: 2:00)</p>
                 <h3>Tools javascript</h3>
                 <h5> vue.js</h5>
                <div class="btn-links">

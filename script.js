@@ -39,8 +39,8 @@ $(document).ready(function(){
   
   const swedish = document.getElementById('#Swededish');
   const english = document.getElementById('#English');
-   function spark() {
-    var spark = $("#Sprak").val();
+   function language() {
+    var spark = $("#language").val();
     if(spark ==="English"){
       $("#Swededish").hide();
       $("#English").show();
