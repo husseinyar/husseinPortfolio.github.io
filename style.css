@@ -165,7 +165,7 @@ header .navbar ul li a:hover{
     flex-flow: column;
     padding:0 15rem;
   
-    width: 60%;
+    width: 80%;
 
 }
 
@@ -255,6 +255,8 @@ header .navbar ul li a:hover{
     flex-wrap: wrap;
     padding:1rem 0;
     padding-left: 3rem;
+    width: 60%;
+  
 }
 
 .education .box-container .box{
