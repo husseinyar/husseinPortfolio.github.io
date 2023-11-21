@@ -376,6 +376,7 @@ header .navbar ul li a:hover{
     padding:2rem;
     margin:2rem;
     margin-bottom: 4rem;
+    position: relative;
 }
 
 .contact .row form .box{
@@ -395,6 +396,23 @@ header .navbar ul li a:hover{
 .contact .row form .message{
     height: 15rem;
     resize: none;
+
+}
+
+.contact .row .thankYouMessage {
+    display: none;
+    position: absolute;
+    margin-top: 20%;
+     height: 20vh;
+     width: 60%;
+    padding: 30px;
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    text-align: center;
+    font-size: 4rem;
+
 }
 
 .contact .row .content .title{

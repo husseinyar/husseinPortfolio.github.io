@@ -50,4 +50,23 @@ $(document).ready(function(){
     }
     
    }
- 
+   function sendEmail() {
+    var to = document.getElementById("to").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    // You would typically send this data to a server, and the server would handle the email sending.
+    // For demonstration purposes, let's just log the details to the console.
+    console.log("To: " + to);
+    console.log("Subject: " + subject);
+    console.log("Message: " + message);
+
+    // Clear the form after sending (optional)
+    document.getElementById("emailForm").reset();
+   document.getElementById("thankYouMessage").style.display = "block";
+   setTimeout(function () {
+    location.reload();
+  }, 2000)
+  
+}
+
