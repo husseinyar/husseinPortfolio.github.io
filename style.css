@@ -355,7 +355,34 @@ header .navbar ul li a:hover{
     transform: scale(1.2);
 }
 
-
+.highlight-list {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 15px 0;
+    color:#fff;
+    font-size: 16px;
+  }
+  
+  .highlight-list li {
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .tools{
+    color: #fff;
+    font-size: 20px;
+  }
+  .highlight-list li::before {
+    content: "•";
+    color: #2ecc71; /* Green bullet points */
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .highlight-list strong {
+    color: #3498db; /* Blue accent color for labels */
+  }
 
 
 .contact .row{
